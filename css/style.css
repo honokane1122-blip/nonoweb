@@ -1,0 +1,164 @@
+@charset "UTF-8";
+/* すべてのページに適用される設定 */
+html{
+	font-size: 16px;
+}
+* {
+	box-sizing :border-box;
+}	
+body{
+	margin: 0 0 0 0;
+	background-color:#c5d2e096;
+}
+p, li ,td {
+	line-height: 1.7;
+}
+h1 {
+	letter-spacing: 2px;
+	font-family: "Playwrite IN", serif;
+	margin:0;
+}
+header{
+	position: sticky;
+	top: 0;
+}
+nav {
+	background-color:#c5d2e096;
+	padding: 3% 0;
+	font-family: "Playfair Display", serif;
+	font-size: 20px;
+
+}
+nav ul{
+	display: table;
+	margin: 0 auto;
+	padding: 0 ;
+	width: 80%;
+	text-align: center;
+}
+nav li{
+	display: table-cell;
+	min-width: 50px;
+	width: 33%;
+}
+nav a{
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	color: #555;
+	padding-bottom: 5px;
+}
+nav li.current{
+	border-bottom: 3px solid #4c6cb3;
+}
+nav li:hover{
+	color: #192f60;
+	border-bottom: 3px solid #192f60;
+}
+table {
+	border-collapse: collapse;
+	width: 70%;
+	border-spacing: 15px;
+	margin:10% auto 10% ;
+	border-collapse:separate;
+	line-height: 3rem;
+}
+table th,table td{
+	border-radius: 10px;
+	text-align: center;
+	padding: 10px 0;
+	
+  }
+  
+  table th{
+	background-color: #5383c3;
+	color: white;
+	border:solid 1px #414fa3;
+  }
+/* すべてのページに適用 - ヘッダー */
+.logo{
+	text-align: center;
+}
+
+/* すべてのページに適用 - ヒーロー */
+.hero{
+	text-align: center;
+}
+/* すべてのページに適用 - メイン */
+main h2{
+	margin: 60px 0 20px 0;
+	border-bottom: 2px solid #253958;
+	padding: 0 0 5px 0;
+	color: #253958;
+	font-size: 1.3rem;
+}
+
+/* すべてのページに適用 - フッター */
+.copyright{
+	margin-top: 20px;
+	margin-bottom: 0;
+	/*padding: 75px 0;*/
+	padding-top: 75px;
+	padding-bottom: 75px;
+	background-color: #384963;
+	color: #FFFFFF;
+	text-align: center;
+}
+.drive{
+	z-index: -100;
+	max-width:100%;
+	margin: auto;
+}
+img{
+	width:100%;
+}
+.hero.favorite {
+	background-image: url(../img/IMG_0499.jpg);
+	padding:10% 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.hero.index{
+	background-image: url(../img/GicVqWJaYAAN7Ia.jpg);
+	padding:10% 0;
+	color: #FFFFFF;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.hero.reference{
+	background-image: url(../img/IMG_0080.jpg);
+	padding:10% 0;
+	color: #FFFFFF;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+h3{
+	text-align: center;
+
+}
+ 
+li{
+	list-style:none;
+	line-height: 2;
+}
+.reference a:link{
+	color: #000;
+	text-decoration: none;
+}
+.reference a:visited{
+	color: #000;
+	text-decoration: none;
+}
+.reference a:hover{
+	color: #000;
+	text-decoration: underline;
+}
+.reference a:active{
+	background-color: #192f60;
+	color: #FFFFFF;
+	text-decoration: underline;
+}

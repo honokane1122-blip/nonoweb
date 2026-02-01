@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>favorite</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+IN:wght@100..400&display=swap" rel="stylesheet">
+	<style type="text/css">
+		#photo {
+			width: 500px;
+			height: 300px;
+			margin: 0 auto;
+			text-align: left;
+			overflow: hidden;
+			position: relative;
+		}
+		 
+		#photo img {
+			top: 0;
+			left: 0;
+			position: absolute;
+		}
+		#suwa {
+			width: 500px;
+			height: 300px;
+			margin: 0 auto;
+			text-align: left;
+			overflow: hidden;
+			position: relative;
+		}
+		 
+		#suwa img {
+			top: 0;
+			left: 0;
+			position: absolute;
+		}
+		#shiga {
+			width: 500px;
+			height: 300px;
+			margin: 0 auto;
+			text-align: left;
+			overflow: hidden;
+			position: relative;
+		}
+		 
+		#shiga img {
+			top: 0;
+			left: 0;
+			position: absolute;
+		}
+		</style>
+		 
+		 
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		 
+		 
+		<script type="text/javascript">
+		$(function(){
+			var setImg = '#photo';
+			var fadeSpeed = 1600;
+			var switchDelay = 5000;
+		 
+			$(setImg).children('img').css({opacity:'0'});
+			$(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
+		 
+			setInterval(function(){
+				$(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
+			},switchDelay);
+		});
+		$(function(){
+			var setImg = '#suwa';
+			var fadeSpeed = 1600;
+			var switchDelay = 5000;
+		 
+			$(setImg).children('img').css({opacity:'0'});
+			$(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
+		 
+			setInterval(function(){
+				$(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
+			},switchDelay);
+		});
+		$(function(){
+			var setImg = '#shiga';
+			var fadeSpeed = 1600;
+			var switchDelay = 5000;
+		 
+			$(setImg).children('img').css({opacity:'0'});
+			$(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
+		 
+			setInterval(function(){
+				$(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
+			},switchDelay);
+		});
+		</script>
+</head>
+<body id="top">
+
+	<header><!--ヘッダー-->
+		<nav>
+			<ul>
+				<li><a href="index.html">profile</a></li>
+				<li class="current"><a href="favorite.html">favorite</a></li>
+				<li><a href="reference.html">reference</a></li>
+			</ul>
+		</nav>
+	</header><!--ヘッダーここまで-->
+	<h1 class="hero favorite">favorite</h1>
+<main><!--メイン-->
+	<h2>ドライブ</h2>
+	<h3>常滑りんくうビーチ</h3>
+	<div class="drive" id="photo">
+		<img src="img/IMG_0429.JPG" alt="常滑">
+		<img src="img/GidjXgZbIAAzIOz (1).jpg" alt="りんくう">
+	</div>
+	<h3>諏訪湖</h3>
+	<div class="drive" id="suwa">
+		<img src="img/Gidf8sDaoAAig2s.jpg" alt="長野">
+		<img src="img/Gidf8sBacAAkYWH.jpg" alt="諏訪">
+	</div>
+	<h3>メタセコイア並木</h3>
+	<div class="drive" id="shiga">
+		<img src="img/508DB5C9-E544-4966-87EA-361AF5588744.jpg" alt="滋賀">
+		<img src="img/Gidf8sDbgAAeTFA.jpg"alt=並木>
+	</div>
+
+</main><!--メインここまで-->
+
+<footer><!--フッター-->
+<p class="copyright">&copy;10_匿名</p>
+</footer><!--フッターここまで-->
+</body>
+</html>
